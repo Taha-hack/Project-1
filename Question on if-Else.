@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main()
+{
+    int price;
+    printf("\t Movie = Gentelman.\n");
+    printf("       Prozone Mall at Infinix. \n");
+    printf("Price range: \n 150 = Brownze\n 250 = Silver \n 350 = Gold \n 500 = Daimond\n");
+    printf("~Enter the price\n");
+    scanf("%d", &price);
+    
+
+    if(price == 150)
+    {
+        printf("You have selected Brownze.\n");
+        printf("Front 4 Rows with 60 Seats available.\n");
+        printf("~Includes Free Popcorns (Large).\n");
+    }
+    else if(price == 250)
+    {
+        printf("You have selected Silver.\n");
+        printf("Mid 3 Rows with 40 Seats available.\n");
+        printf("~Includes Free Popcorns(Medium).\n");       
+    }
+    else if(price == 350)
+    {
+        printf("You have selected Gold.\n");
+        printf("Last 3 Rows with 25 Seats available.\n");
+        printf("~Includes Free Popcorns(Small).\n");
+    }
+    else if(price == 500)
+    {
+        printf("You have selected Daimond.\n");
+        printf("Back 1 Row with 15 Seats available.\n");
+        printf("Includes = Free Popcorns (unlimited) And Coldrinks.\n");
+
+    }
+    else if(price)
+    {
+        printf("Wrong input \n");
+        printf("Please select accordingly\n");
+    }
+
+    return 0;
+}
